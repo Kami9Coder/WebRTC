@@ -1,0 +1,279 @@
+.App {
+  text-align: center;
+}
+
+
+a{
+  text-decoration: none;
+  font-size: larger;
+  font: bold;
+  color:cornflowerblue;
+  padding-right: 10px;
+}
+a:hover
+{
+  color: black;
+}
+img{
+  max-width: 100%;
+  height: auto;
+  margin-bottom: -15%;
+  display: block;
+  margin-top: -5%;
+}
+.App{
+  overflow: hidden;
+}
+.navbar{
+  padding: 20px;
+  background-color:rgb(255, 255, 233) ;
+  text-align: center;
+}
+.header{
+  color: white;
+  position: sticky;
+  padding: 1px;
+  text-align:center;
+  background-color:aqua;
+}
+.footer{
+  text-align: center;
+  padding: 10px;
+  overflow: hidden;
+}
+i{
+  padding: 10px;
+  font:medium;
+  /* font-variant: small-caps; */
+}
+
+/* .videoscreen {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  padding: 0 50px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+} */
+/* video {
+  max-width: calc(50% - 100px);
+  margin: 0 50px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  padding: 0;
+  box-shadow: rgba(122, 163, 163, 0.2) 0px 2px 2px, rgba(156, 172, 172, 0.2) 0px 4px 4px, rgba(156, 172, 172, 0.2) 0px 8px 8px, rgba(156, 172, 172, 0.2) 0px 16px 16px, rgba(156, 172, 172, 0.2) 0px 32px 32px, rgba(156, 172, 172, 0.2) 0px 64px 64px;
+} */
+.copy {
+  position:absolute; 
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.sidebar{
+  float: left;
+  background-color: aqua;
+  height:100vh;
+  max-height: min-content;
+  width: 30vh;
+  font-size: larger;
+}
+.list{
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+ul{
+  list-style-type: none;
+  padding: 0;
+}
+li{
+  /* background-color: brown; */
+  padding: 3px;
+
+
+}
+.headernav{
+  background-color: aliceblue;
+  position:sticky;
+  padding: 1vh;
+  text-align: center;
+}
+.controls{
+  background-color: blueviolet;
+  /* padding: 1px; */
+  text-align: center;
+  float: right;
+  height: 100vh;
+}
+
+button {
+  display: inline-block;
+  border: none;
+  font: inherit;
+  padding: 0.8rem 2rem;
+  border-radius: 6px;
+  background-color: var(--color-primary);
+  color: white;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+  font-family: inherit;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+
+video {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background: #ffffff;
+}
+
+.home {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10vw;
+  padding: 30vh 20vw;
+}
+
+.home .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+  border-radius: 8px;
+  padding: 40px 20px;
+}
+
+.modalContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  padding: 30px;
+  color: var(--color-primary);
+  background-color: white;
+}
+
+.modal h3 {
+  margin: 0;
+  font-weight: normal;
+}
+
+.modal .container {
+  display: flex;
+  margin-top: 40px;
+}
+
+.modal button.secondary {
+  margin-left: auto;
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+  margin-right: 20px;
+}
+
+.videos .local {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  width: 280px;
+  height: 210px;
+  border-radius: 8px;
+  z-index: 10;
+}
+
+.videos .remote {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.videos .buttonsContainer {
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  transform: translateX(-50%);
+  display: flex;
+  z-index: 1;
+}
+
+.videos .buttonsContainer .button {
+  border: 2px solid transparent;
+  padding: 24px;
+  border-radius: 50%;
+  font-size: 0;
+  transition-property: border-color, box-shadow;
+  transition-duration: 500ms;
+  transition-timing-function: ease;
+}
+
+.videos .buttonsContainer .button:hover {
+  box-shadow: 0px 5px 10px #0000001a;
+  border-color: transparent;
+}
+
+.videos .buttonsContainer .hangup {
+  margin-right: 50px;
+  background-color: #ff694f;
+  color: #ffffff;
+}
+
+.videos .buttonsContainer .more {
+  background-color: white;
+  border-color: #dddddd;
+  cursor: pointer;
+}
+
+.videos .buttonsContainer .more .popover {
+  visibility: hidden;
+  position: absolute;
+  bottom: 100%;
+  left: 100%;
+  padding: 20px 0px;
+  font-size: 1rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 5px 10px #0000001a;
+}
+
+.videos .buttonsContainer .more:focus-within .popover {
+  visibility: visible;
+}
+
+.videos .buttonsContainer .more .popover button {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  background-color: white;
+  color: black;
+}
+
+.videos .buttonsContainer .more .popover button svg {
+  margin-right: 20px;
+}
+
